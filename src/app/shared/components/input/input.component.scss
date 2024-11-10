@@ -1,0 +1,20 @@
+.input-container {
+  margin-bottom: 1.5rem;
+
+  label {
+    color: #4f4f4f;
+  }
+
+  input {
+    width: 100%;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    padding: 1rem;
+    margin-top: 5px;
+  }
+
+  .input-error {
+    font-size: 0.8rem;
+    color: #e47070;
+  }
+}

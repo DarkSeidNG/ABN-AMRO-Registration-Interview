@@ -1,0 +1,17 @@
+<div class="input-container">
+  <label [for]="'input_' + name()">
+    {{ "LABELS." + name() | translate }}
+  </label>
+  <input
+    [id]="'input_' + name()"
+    [value]="value"
+    [type]="type()"
+    (input)="onInput($event)"
+    (blur)="onTouched()"
+    [disabled]="disabled"
+    [placeholder]="'PLACEHOLDERS.' + name() | translate"
+  />
+  @if (hasErrors) {
+  <span class="input-error"> {{ "ERRORS." + name() | translate }} </span>
+  }
+</div>

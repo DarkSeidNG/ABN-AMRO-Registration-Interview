@@ -1,0 +1,22 @@
+<div class="registration-container">
+  <h3 class="form-header">{{ "REGISTER_ACCOUNT" | translate }}</h3>
+  @if (showError) {
+  <div class="form-error">{{ "ERRORS.form_error" | translate }}</div>
+  }
+
+  <form [formGroup]="formGroup" (submit)="register()">
+    <app-input type="text" formControlName="fullname" name="fullname" />
+    <app-input type="text" formControlName="username" name="username" />
+    <app-input type="email" formControlName="email" name="email" />
+    <app-input type="password" formControlName="password" name="password" />
+    <app-input
+      type="password"
+      formControlName="passwordConfirmation"
+      name="confirm_password"
+    />
+
+    <app-button type="submit" [disable]="formGroup.disabled">
+      {{ "REGISTER" | translate }}
+    </app-button>
+  </form>
+</div>

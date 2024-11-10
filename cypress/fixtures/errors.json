@@ -1,0 +1,8 @@
+{
+  "fullname": "Enter a valid name or leave the field empty",
+  "username": "Enter a valid username with at least 4 characters",
+  "email": "Enter a valid email address",
+  "password": "Enter a valid password with at least one uppercase character, one lowercase character and a special character, with minimum length of 8 characters",
+  "confirm_password": "Enter a valid matching password",
+  "form_error": "Something went wrong while submitting your request, please check your data and try again"
+}

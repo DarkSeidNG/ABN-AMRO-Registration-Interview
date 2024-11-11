@@ -59,7 +59,6 @@ export class RegistrationComponent {
   protected register(): void {
     this.formGroup.markAllAsTouched();
 
-    console.log(this.formGroup.value);
     if (this.formGroup.valid) {
       this.formGroup.disable();
       this.showError = false;

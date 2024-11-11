@@ -3,6 +3,7 @@ import { AbstractControl, ValidationErrors } from '@angular/forms';
 export class CustomValidators {
   static username(control: AbstractControl): ValidationErrors | null {
     const usernameRegex = /^[a-zA-Z0-9_]+$/;
+
     const valid = usernameRegex.test(control.value);
     return valid ? null : { invalid: true };
   }

@@ -10,7 +10,7 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
   styleUrl: './input.component.scss',
 })
 export class InputComponent implements ControlValueAccessor {
-  public control = inject(NgControl, { optional: true, self: true });
+  private control = inject(NgControl, { optional: true, self: true });
 
   public name = input<string>();
   public type = input<string>();
